@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class ColorChanger : MonoBehaviour
 {
+    SpriteRenderer sr;
+    void Start()
+    {
+        sr = GetComponent<SpriteRenderer>();
+    }
+
     void OnMouseEnter()
     {
-        GetComponent<SpriteRenderer>().color = Color.red;
+        sr.color = Color.red;
     }
 
     void OnMouseExit()
     {
-        GetComponent<SpriteRenderer>().color = Color.white;
+        sr.color = Color.white;
     }
 }
