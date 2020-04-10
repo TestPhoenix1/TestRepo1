@@ -6,7 +6,7 @@ public class ColorChanger : MonoBehaviour
 {
     void OnMouseEnter()
     {
-        GetComponent<SpriteRenderer>().color = Color.blue;
+        GetComponent<SpriteRenderer>().color = Color.red;
     }
 
     void OnMouseExit()
